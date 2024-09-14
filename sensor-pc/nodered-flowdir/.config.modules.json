@@ -1,0 +1,9 @@
+{
+    "cron-parser": {
+        "spec": "cron-parser",
+        "module": "cron-parser",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}

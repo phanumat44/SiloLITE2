@@ -1,0 +1,22 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.7.0
+2 info using node@v20.15.0
+3 silly config:load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config:load:file:/data/.npmrc
+5 silly config:load:file:/usr/src/node-red/.npmrc
+6 silly config:load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-node-ping@0.3.3
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-node-ping@0.3.3"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2024-07-31T04_33_14_883Z-
+10 verbose logfile /data/.npm/_logs/2024-07-31T04_33_14_883Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest node-red-node-ping@0.3.3
+14 http fetch GET 200 https://registry.npmjs.org/node-red-node-ping 1004ms (cache miss)
+15 silly placeDep ROOT node-red-node-ping@0.3.3 OK for: node-red-project@0.0.1 want: 0.3.3
+16 silly reify moves {}
+17 silly tarball no local data for node-red-node-ping@https://registry.npmjs.org/node-red-node-ping/-/node-red-node-ping-0.3.3.tgz. Extracting by manifest.
+18 http fetch GET 200 https://registry.npmjs.org/node-red-node-ping/-/node-red-node-ping-0.3.3.tgz 81ms (cache miss)
+19 silly ADD node_modules/node-red-node-ping
+20 verbose exit 0
+21 info ok

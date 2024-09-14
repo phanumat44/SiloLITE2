@@ -1,0 +1,14 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "cron-parser": "^4.9.0",
+        "node-red-contrib-cron-plus": "~2.1.0",
+        "node-red-contrib-postgresql": "~0.14.2",
+        "node-red-mysql-r2": "~1.3.0",
+        "node-red-node-mysql": "~2.0.0",
+        "node-red-node-ping": "~0.3.3"
+    }
+}

@@ -1,0 +1,58 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.7.0
+2 info using node@v20.15.0
+3 silly config:load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config:load:file:/data/.npmrc
+5 silly config:load:file:/usr/src/node-red/.npmrc
+6 silly config:load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-contrib-cron-plus@2.1.0
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-contrib-cron-plus@2.1.0"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2024-07-30T08_06_44_285Z-
+10 verbose logfile /data/.npm/_logs/2024-07-30T08_06_44_285Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest node-red-contrib-cron-plus@2.1.0
+14 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-cron-plus 1113ms (cache miss)
+15 silly placeDep ROOT node-red-contrib-cron-plus@2.1.0 OK for: node-red-project@0.0.1 want: 2.1.0
+16 silly fetch manifest coord-parser@^1.0.0
+17 silly fetch manifest cronosjs@^1.7.1
+18 silly fetch manifest cronstrue@^2.28.0
+19 silly fetch manifest pretty-ms@7.0.1
+20 silly fetch manifest suncalc2@^1.8.1
+21 http fetch GET 200 https://registry.npmjs.org/pretty-ms 180ms (cache miss)
+22 http fetch GET 200 https://registry.npmjs.org/cronosjs 202ms (cache miss)
+23 http fetch GET 200 https://registry.npmjs.org/coord-parser 319ms (cache miss)
+24 http fetch GET 200 https://registry.npmjs.org/suncalc2 420ms (cache miss)
+25 http fetch GET 200 https://registry.npmjs.org/cronstrue 469ms (cache miss)
+26 silly placeDep ROOT coord-parser@1.0.0 OK for: node-red-contrib-cron-plus@2.1.0 want: ^1.0.0
+27 silly placeDep ROOT cronosjs@1.7.1 OK for: node-red-contrib-cron-plus@2.1.0 want: ^1.7.1
+28 silly placeDep ROOT cronstrue@2.50.0 OK for: node-red-contrib-cron-plus@2.1.0 want: ^2.28.0
+29 silly placeDep ROOT pretty-ms@7.0.1 OK for: node-red-contrib-cron-plus@2.1.0 want: 7.0.1
+30 silly placeDep ROOT suncalc2@1.8.1 OK for: node-red-contrib-cron-plus@2.1.0 want: ^1.8.1
+31 silly fetch manifest parse-ms@^2.1.0
+32 http fetch GET 200 https://registry.npmjs.org/parse-ms 80ms (cache miss)
+33 silly placeDep ROOT parse-ms@2.1.0 OK for: pretty-ms@7.0.1 want: ^2.1.0
+34 silly reify moves {}
+35 silly tarball no local data for parse-ms@https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz. Extracting by manifest.
+36 silly tarball no local data for suncalc2@https://registry.npmjs.org/suncalc2/-/suncalc2-1.8.1.tgz. Extracting by manifest.
+37 silly tarball no local data for cronstrue@https://registry.npmjs.org/cronstrue/-/cronstrue-2.50.0.tgz. Extracting by manifest.
+38 silly tarball no local data for pretty-ms@https://registry.npmjs.org/pretty-ms/-/pretty-ms-7.0.1.tgz. Extracting by manifest.
+39 silly tarball no local data for cronosjs@https://registry.npmjs.org/cronosjs/-/cronosjs-1.7.1.tgz. Extracting by manifest.
+40 silly tarball no local data for node-red-contrib-cron-plus@https://registry.npmjs.org/node-red-contrib-cron-plus/-/node-red-contrib-cron-plus-2.1.0.tgz. Extracting by manifest.
+41 silly tarball no local data for coord-parser@https://registry.npmjs.org/coord-parser/-/coord-parser-1.0.0.tgz. Extracting by manifest.
+42 http fetch GET 200 https://registry.npmjs.org/pretty-ms/-/pretty-ms-7.0.1.tgz 89ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/parse-ms/-/parse-ms-2.1.0.tgz 92ms (cache miss)
+44 http fetch GET 200 https://registry.npmjs.org/cronosjs/-/cronosjs-1.7.1.tgz 134ms (cache miss)
+45 http fetch GET 200 https://registry.npmjs.org/coord-parser/-/coord-parser-1.0.0.tgz 185ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/cronstrue/-/cronstrue-2.50.0.tgz 191ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-cron-plus/-/node-red-contrib-cron-plus-2.1.0.tgz 481ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/suncalc2/-/suncalc2-1.8.1.tgz 784ms (cache miss)
+49 silly ADD node_modules/parse-ms
+50 silly ADD node_modules/suncalc2
+51 silly ADD node_modules/pretty-ms
+52 silly ADD node_modules/cronstrue
+53 silly ADD node_modules/cronosjs
+54 silly ADD node_modules/coord-parser
+55 silly ADD node_modules/node-red-contrib-cron-plus
+56 verbose exit 0
+57 info ok

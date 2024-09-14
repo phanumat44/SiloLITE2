@@ -1,0 +1,84 @@
+version: '3.7'
+
+services:
+  node-red:
+     image: nodered/node-red
+     container_name: node-red-service
+     ports:
+      - "1881:1880"
+     volumes:
+      - ./nodered-flowdir:/data
+     depends_on:
+       mysql:
+        condition: service_healthy
+     networks:
+      - service-network
+      
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin@rootpw123
+      MYSQL_DATABASE: mysqldb
+      MYSQL_USER: admindb
+      MYSQL_PASSWORD: admin@rootpw123
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 6
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./initdb/schema.sql:/docker-entrypoint-initdb.d/1.sql
+    networks:
+      - service-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: admin@rootpw123
+    ports:
+      - "8080:80"
+    depends_on:
+       mysql:
+        condition: service_healthy
+    networks:
+      - service-network
+
+  backend:
+    
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend-service
+    environment:
+      DB_HOST: mysql
+      DB_USER: admindb
+      DB_PASSWORD: admin@rootpw123
+      DB_NAME: mysqldb
+      DB_PORT: 3306
+      MQTT_BROKER: 'mqtt://scmq.scc.co.th'
+      MQTT_CLIENT_ID: 'sensor-pc'
+      MQTT_USERNAME: 'sensor-pc'
+      MQTT_PASSWORD: '1234'
+      MQTT_QOS: '2'
+    ports:
+      - "3001:3001"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+    networks:
+      - service-network
+
+volumes:
+  mysql-data:
+   
+networks:
+  service-network:
+    driver: bridge
