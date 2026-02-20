@@ -204,7 +204,7 @@ Silo Monitoring/
 
 | Variable      | ค่าตัวอย่าง           | คำอธิบาย        |
 | ------------- | --------------------- | --------------- |
-| `MQTT_BROKER` | mqtt://scmq.scc.co.th | MQTT broker URL |
+| `MQTT_BROKER` | mqtt://scmq.mnb.co.th | MQTT broker URL |
 | `PG_HOST`     | postgres              | PostgreSQL host |
 | `PG_DATABASE` | Silo                  | Database name   |
 
