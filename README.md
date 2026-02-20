@@ -210,9 +210,6 @@ Silo Monitoring/
 
 ---
 
-## 📝 License
-
-MIT License - ใช้งานได้อย่างอิสระ
 
 ---
 
